@@ -1,0 +1,74 @@
+:root {}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: blanchedalmond;
+}
+
+header {
+    background: orange;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+section h2, section .timer {
+    text-align: center;
+}
+
+section {
+    font-size: 20px;
+}
+
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.list-item {
+    padding: 15px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbox img {
+    height: 80px;
+    width: 100px;
+    margin-right: 60px;
+}
+
+@supports (zoom:2) {
+    input[type=checkbox] {
+        zoom: 2;
+    }
+}
+
+@supports not (zoom:2) {
+    input[type=checkbox] {
+        transform: scale(2);
+        margin: 15px;
+    }
+}
+
+.timer p {
+    display: inline;
+
+}
